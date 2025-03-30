@@ -14,8 +14,8 @@ app.use(cookieParser());
 // middlware:-
 app.use(express.json());
 
-app.use("/api/auth", authRouter);
-app.use("/api/role", userRouter);
+app.use("/auth", authRouter);
+app.use("/role", userRouter);
 
 app.get("/test", (req, res) => {
   res.send("API is running...");
